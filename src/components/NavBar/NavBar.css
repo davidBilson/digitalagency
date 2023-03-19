@@ -1,0 +1,164 @@
+.nav-header {
+    background: linear-gradient(to right,white, rgb(248,248,248));
+    width: 100%;
+    margin: 0 auto;
+    height: fit-content;
+    position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+    z-index: 20;
+    transition: .5s ease-in-out;
+    margin-bottom: 5rem;
+}
+.navigation {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: .7rem 0rem;
+    max-width: 1200px;
+}
+  .brand-name {
+    text-decoration: none;
+    color: var(--color6);
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+  }
+.brand-name span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.brand-name span img {
+    width: 20px;
+}
+
+  .gold {
+      color: var(--color2);
+  }
+  .navigation-menu {
+    margin-left: auto;
+  }
+  .navigation-menu ul {
+      display: flex;
+      align-items: center;
+      padding: 0;
+      gap: 4rem;
+      color: var(--color-5);
+      font-size: .9rem;
+      font-weight: 500;
+    }
+    .navigation-menu li {
+      list-style-type: none;
+      transition: .3s ease-in-out;
+    }
+    .navigation-menu li .active {
+      color: var(--color1);
+      font-weight: 600;
+    }
+    .navigation-menu li:hover {
+      color: var(--color1);
+    }
+    .navigation-menu li a {
+      text-decoration: none;
+      display: block;
+      width: 100%;
+    }
+    .hamburger {
+      border: 0;
+      height: 60px;
+      width: 60px;
+      padding: 0rem;
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      right: 0px;
+      transform: translateY(-50%);
+      display: none;
+      color:black;
+      background: none;
+      font-size: 1.5rem;
+    }
+    #loginBtn {
+        transition: .3s ease-in-out;
+        font-weight: 600;
+        padding: 12px 48px;
+        border-radius: .2rem;
+        background: var(--color1);
+        color: #ffffff;
+        border: 1px solid var(--color-0);
+    }
+    #loginBtn:hover {
+      border: 1px solid var(--color-4);
+      background: none;
+      color: var(--color-4);
+    }
+    @media screen and (max-width:1200px) {
+        .navigation {
+            padding: .9rem;
+        }
+    }
+    @media screen and (max-width: 768px) {
+      .hamburger {
+        display: block;
+      }
+      .navigation-menu ul {
+          display: none;
+        }
+        .navigation-menu ul {
+          position: absolute;
+          top: 48px;
+          left: 0;
+          flex-direction: column;
+          width: 100%;
+          height: 100vh;
+          background: var(--bg-color2);
+          background: var(--color4);
+          font-size: 1.2rem;
+          font-weight: 300;
+        }
+        .navigation-menu li {
+          text-align: center;
+          margin: 0;
+        }
+        .navigation-menu li:first-child {
+          margin-top: 3rem;
+        }
+        .navigation-menu li:last-child {
+          border-bottom: none;
+        }
+        #loginBtn {
+          transition: .3s ease-in-out;
+          font-weight: 500;
+          padding: 1rem 4rem;
+          border-radius: .3rem;
+          background: var(--color1);
+          color: #ffffff;
+          border: 1px solid var(--color-0);
+          width: fit-content;
+          margin: auto;
+      }
+        .navigation-menu li a {
+          color: var(--color6);
+          width: 100%;
+          padding: 1.5rem 0;
+        }
+        .navigation-menu li a:hover {
+          color: var(--color6);
+          width: 100%;
+          padding: 1.5rem 0;
+          color: black;
+        }
+        .navigation-menu li:hover {
+          background-color: #eee;
+        }
+        .navigation-menu.expanded ul {
+          display: block;
+        }
+    }

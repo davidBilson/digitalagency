@@ -1,0 +1,151 @@
+.contact-container {
+    width: 90%;
+    max-width: 1200px;
+    min-height: 450px;
+    padding: 100px;
+    background: dodgerblue;
+    background: url(../../assets/web-gradient-1.webp);
+    background-size: cover;
+    margin: auto;
+    margin-top: 5rem;
+    overflow: hidden;
+    border-radius: 40px;
+}
+.contact-container h2 {
+    font-weight: 900;
+    font-size: 5rem;
+    color: var(--color-one);
+}
+.contact-container button {
+    padding: 20px 60px;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    background: var(--color-one);
+    outline: none;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: rgb(0, 0, 56);
+    border-radius: 40px;
+    cursor: pointer;
+}
+#blink {
+    animation: blink 1.5s infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+.modal-content {
+    width: 100%;
+    height: 100%;
+    background: rgb(15, 15, 15);
+}
+  .modal-heading {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 900;
+    background: url(../../assets/web-gradient-2.webp);
+    background-size: cover;
+    background-position: center;
+    color: var(--color-one);
+    margin: auto;
+    /* border-radius: 40px 40px 0px 0px; */
+    overflow: hidden;
+  }
+  .modal-heading h3 {
+    width: 100%;
+    height: 100%;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* From https://css.glass */
+background: rgba(0, 0, 0, 0.19);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(1.4px);
+-webkit-backdrop-filter: blur(1.4px);
+  }
+  .modal-preface {
+    padding:  30px 40px 15px 40px ;
+    color: var(--color-two);
+  }
+  .modal-preface h3 {
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  .modal-preface p {
+    margin-top: 1rem;
+  }
+  .modal-socials {
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .modal-socials a {
+    width: 100%;
+    background: grey;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    gap: 5px;
+    transition: .3s ease-in-out;
+  }
+  .modal-socials a:hover {
+    background: var(--color-two);
+
+  }
+  #close-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 900;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 999;
+  }
+  @media screen and (max-width:768px) {
+    .contact-container {
+      padding: 70px;
+  }
+  }
+  @media screen and (max-width:450px) {
+    .modal-heading {
+      font-size: 2.3rem;
+    }
+    .contact-container {
+      padding: 80px 30px;
+      min-height: fit-content;
+  }
+    .contact-container h2 {
+      font-size: 3rem;
+  }
+  .contact-container button {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+} 
+  }

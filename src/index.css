@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+    --color-one:rgb(248,248,248);
+    --color-two:rgb(208, 208, 208);
+}
+body {
+    background: linear-gradient(to right,white, rgb(248,248,248));
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    zoom: reset;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+}

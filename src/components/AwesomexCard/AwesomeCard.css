@@ -1,0 +1,59 @@
+.awesome-card {
+    width: 90%;
+    max-width: 1200px;
+    background: url(./../../assets/web-gradient-1.webp);
+    background-position: center;
+    background-size: cover;
+    height: 15rem;
+    margin: auto;
+    margin-top: 3rem;
+    border-radius: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.awesome-services-container {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .awesome-services {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-one);
+    opacity: 0;
+    animation: fade 6s linear infinite;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  

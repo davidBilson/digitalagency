@@ -1,0 +1,63 @@
+.mile-stone {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 5rem;
+    color: var(--color-one);
+}
+.mile-stone .mile-stone-container {
+    max-width: 250px;
+    overflow: hidden;
+    text-align: center;
+}
+.mile-stone .mile-stone-container p {
+    color: var(--color-two);
+}
+.mile-stone .mile-stone-container:last-child {
+    max-width: 300px;
+    text-align: left;
+}
+.count-up {
+    font-weight: 300;
+    font-size: 5.5rem;
+}
+.count-plus-one {
+    color:rgb(22, 100, 179);
+    font-weight: 900;
+}
+.count-plus-two {
+    color:orangered;
+    font-weight: 900;
+}
+.count-plus-three {
+    color:orange;
+    font-weight: 900;
+}
+@media screen and (max-width:1024px) {
+    .mile-stone .mile-stone-container:last-child {
+        max-width: 700px;
+        margin-top: 2rem;
+    }   
+}
+@media screen and (max-width:450px) {
+    .mile-stone {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        margin-bottom: 5rem;
+        color: var(--color-one);
+    }
+    .mile-stone .mile-stone-container {
+        max-width: 250px;
+        overflow: hidden;
+        text-align: center;
+    }
+}

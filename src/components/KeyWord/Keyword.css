@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+.terminologies-container {
+    width: 100%;
+    max-width: 1200px;
+    font-size: 3rem;
+    font-weight: 400;
+    margin: auto;
+    overflow: hidden;
+    color: var(--color-two);
+    border-top: 1px solid rgb(48, 48, 48);
+    border-bottom: 1px solid rgb(48, 48, 48);
+    padding: 10px 0;
+    font-family: 'Shadows Into Light', cursive;
+  }
+  
+  .terminologies {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    animation: none;
+  }
+  
+  .terminology {
+    margin-right: 2rem;
+  }  .terminologies-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .terminologies {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    animation: scroll 20s linear infinite;
+  }
+  
+  .terminology {
+    margin-right: 2rem;
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  

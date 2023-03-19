@@ -1,0 +1,91 @@
+.service-container {
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 5rem;
+}
+.service-one h2 {
+    font-size: 3rem;
+    color: var(--color-two);
+    font-weight: 400;
+}
+.service-one {
+    display: flex;
+    justify-content: space-between;
+}
+.service-one > div:nth-child(1) {
+    max-width: 20%;
+}
+.service-one > div:nth-child(2) {
+    width: 70%;
+    background: url(../../assets/web-gradient-1.webp);
+    background-size: cover;
+    color: var(--color-one);
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+.service-one > div:nth-child(2) p {
+background: rgba(255, 255, 255, 0);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.4px);
+-webkit-backdrop-filter: blur(5.4px);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.service-two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    color: var(--color-two);
+    margin-top: 3rem;
+}
+.service-two > div {
+    width: 90%;
+    max-width: 360px;
+}
+@media screen and (max-width:1024px) {
+    .service-two > div {
+        width: 90%;
+        max-width: 450px;
+    }   
+}
+@media screen and (max-width:768px) {
+    .service-two > div {
+        width: 90%;
+        max-width: 90%;
+    }   
+}
+@media screen and (max-width:450px) {
+    .service-one {
+        display: flex;
+        flex-direction: column;
+        justify-content: none;
+        gap: 1.5rem;
+    }
+    .service-one > div:nth-child(1) {
+        max-width: 100%;
+    }
+    .service-one > div:nth-child(2) {
+        width: 100%;
+        font-weight: 500;
+        font-size: .8rem;
+    }
+    .service-two {
+        gap: 1.5rem;
+        color: var(--color-two);
+        margin-top: 2rem;
+    }       
+}

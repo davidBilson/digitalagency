@@ -1,0 +1,153 @@
+.portfolio-one {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 7rem;
+    min-height: 800px;
+}
+.parent {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-gap: 2.5rem;
+    }
+    .parent > div {
+        border-radius: 40px;
+        cursor: pointer;
+    }
+    .parent > div:nth-child(2) {
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .parent >  div:nth-child(4) {
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .parent > div:nth-child(2) p:nth-of-type(1) {
+        font-weight: 500;
+        font-size: 4rem;
+        background-color: white;
+        width: 7%;
+    }
+    .parent > div:nth-child(4) p:nth-of-type(1) {
+        font-weight: 500;
+        font-size: 4rem;
+        background-color: white;
+        width: 7%;
+    }
+    .parent > div:last-child p:nth-of-type(1) {
+        border-left: 15px solid white;
+        height: fit-content;
+        font-weight: 600;
+        font-size: 4.5rem;
+        position: absolute;
+        top: 50%; 
+        left: 30%;
+        transform: translate(-50%, -50%) rotate(-90deg);
+    }
+    .parent > div:nth-child(4) p:nth-of-type(2) {
+        font-weight: 300;
+        font-size: 3.8rem;
+        text-align: right;
+    }
+    .parent > div:nth-child(2) p:nth-of-type(2) {
+        font-weight: 300;
+        font-size: 3.8rem;
+        text-align: right;
+    }
+    .parent > div:last-child p:nth-of-type(2) {
+        font-weight: 300;
+        font-size: 4rem;
+        position: absolute; /* Set the rotated element to absolute */
+  top: 30%; /* Move the element down by 50% of the parent container height */
+  left: 60%; /* Move the element right by 50% of the parent container width */
+  transform: translate(-50%, -50%) rotate(-90deg);
+    }
+
+    .parent .div1 { grid-area: 1 / 1 / 4 / 3;
+            background-color: orange;
+            background: url(../../assets/image-grid-one.jpg);
+    }
+    .parent .div2 { grid-area: 4 / 1 / 6 / 2; 
+            background-color:dodgerblue;
+    }
+    .parent .div3 { grid-area: 1 / 3 / 3 / 4;
+            text-align: justify;
+            overflow: hidden;
+            border-radius: 0;
+    }
+    .parent .div3 h2 {
+        font-size: 4rem;
+        color: var(--color-two);
+        font-weight: 300;
+    }
+    .parent .div3 p {
+        color: var(--color-two);
+        font-weight: 400;
+    }
+    .parent .div4 { grid-area: 4 / 2 / 6 / 3;
+            background-color: orangered;
+    }
+    .parent .div5 { grid-area: 3 / 3 / 6 / 4;
+            background-color: darkorange;
+            position: relative;
+    }
+    
+    @media screen and (max-width:1024px) {
+        .parent .div3 h2 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .parent .div3 p {
+            font-weight: 300;
+        }
+        .parent > div:nth-child(2) p:nth-of-type(1) {
+            font-weight: 500;
+            font-size: 3rem;
+        }
+        .parent > div:nth-child(4) p:nth-of-type(1) {
+            font-size: 3rem;
+        }
+        .parent > div:last-child p:nth-of-type(1) {
+            font-size: 4rem;
+        }
+        .parent > div:nth-child(4) p:nth-of-type(2) {
+            font-size: 3rem;
+        }
+        .parent > div:nth-child(2) p:nth-of-type(2) {
+            font-size: 3rem;
+        }
+        .parent > div:last-child p:nth-of-type(2) {
+            font-size: 2rem;
+        }
+    }
+    @media screen and (max-width:768px) {
+        
+        .parent {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .parent > div {
+            width: 100%;
+            height: 350px;
+        }
+        .parent > div:nth-child(3) {
+            height: fit-content;
+            order: -1;
+        }
+    }
+    @media screen and (max-width:450px) {
+        .parent .div1 { grid-area: 1 / 1 / 4 / 3;
+            background-size: 270%;
+            background-position: 15% 12%;
+    }   
+    }
