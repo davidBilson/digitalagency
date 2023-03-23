@@ -10,10 +10,10 @@ const NavBar = () => {
   return (
     <header className='nav-header'>
     <nav className="navigation">
-    <a href='' className="brand-name">
+    <a href='#' className="brand-name">
             <span>
             {/* <img src={Logo} alt="" className="logo-img" /> */}
-            TaySolutions <MdOutlineWebhook />
+            CyberBuilders <MdOutlineWebhook />
             </span>
     </a>
     <button className="hamburger" onClick={() => setIsNavExpanded(!isNavExpanded)}>
@@ -24,16 +24,13 @@ const NavBar = () => {
           isNavExpanded ? "navigation-menu expanded" : "navigation-menu"}>
       <ul>
         <li>
-          <a href='' onClick={() => {setIsNavExpanded(!isNavExpanded)}}>About Us</a>
+          <a href='#portfolio' onClick={() => {setIsNavExpanded(!isNavExpanded)}}>Projects</a>
         </li>
         <li>
-          <a href='' onClick={() => {setIsNavExpanded(!isNavExpanded)}}>Projects</a>
+          <a  href='#services' onClick={() => {setIsNavExpanded(!isNavExpanded)}}>Services</a>
         </li>
         <li>
-          <a  href='' onClick={() => {setIsNavExpanded(!isNavExpanded)}}>Services</a>
-        </li>
-        <li>
-          <a  href='#' onClick={() => {setIsNavExpanded(!isNavExpanded)}}>Contact Us</a>
+          <a  href='#contact' onClick={() => {setIsNavExpanded(!isNavExpanded)}}>Contact Us</a>
         </li>
       </ul>
     </div>

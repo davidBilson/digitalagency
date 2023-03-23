@@ -18,7 +18,7 @@ const Hero = () => {
             We create innovative solutions to help businesses thrive in today's fast-paced digital landscape. Our team of experts brings together creativity, strategy, and technology to deliver measurable results that exceed our clients' expectations. Let us help you unlock your brand's full potential and achieve your digital goals.
             </p>
             <div className="hero-buttons">
-                <a href="">
+                <a href="#contact">
                     START PROJECT <BiDownArrow/>
                 </a>
                 <a href="">

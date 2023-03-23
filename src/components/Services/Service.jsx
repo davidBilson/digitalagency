@@ -4,7 +4,7 @@ import ServiceTwo from './ServiceTwo'
 
 const Service = () => {
   return (
-    <section className="service-container">
+    <section className="service-container" id='services'>
         <ServiceOne />
         <ServiceTwo />
     </section>

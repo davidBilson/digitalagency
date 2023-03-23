@@ -32,7 +32,7 @@ const Contact = () => {
     };
     const [modalOpen, setModalOpen] = useState(false);
   return (
-    <section className="contact-container">
+    <section className="contact-container" id='contact'>
         <h2>READY TO START <br />A PROJECT<span id="blink">?</span></h2>
         <button onClick={() => setModalOpen(true)}>START NOW <MdOutlineRocketLaunch/></button>
         <Modal

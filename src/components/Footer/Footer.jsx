@@ -8,7 +8,7 @@ const Footer = () => {
     <footer>
         <section>
             <h2>KEEP IN TOUCH<span className='count-plus-three'>.</span></h2>
-            <p>Tay Solutions</p>
+            <p>CyberBuilders</p>
             <p className="copyright">&copy;Copyright Tay Solutions 2023</p>
         </section>
         <section className='footer-social-links'>
