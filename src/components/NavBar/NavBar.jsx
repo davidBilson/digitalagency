@@ -19,9 +19,8 @@ const NavBar = () => {
     <button className="hamburger" onClick={() => setIsNavExpanded(!isNavExpanded)}>
       {isNavExpanded ? <AiOutlineClose /> : <AiOutlineMenu />}
     </button>
-    <div
-      className={
-          isNavExpanded ? "navigation-menu expanded" : "navigation-menu"}>
+    <div className={
+                isNavExpanded ? "navigation-menu expanded" : "navigation-menu"}>
       <ul>
         <li>
           <a href='#portfolio' onClick={() => {setIsNavExpanded(!isNavExpanded)}}>Projects</a>

@@ -13,13 +13,7 @@ const Footer = () => {
         </section>
         <section className='footer-social-links'>
                 <a href="">
-                Twitter <AiOutlineTwitter />
-                </a>
-                <a href="">
                 Whatsapp <IoLogoWhatsapp />
-                </a>
-                <a href="">
-                Instagram <AiFillInstagram />
                 </a>
                 <a href="">
                 Email <CgMail />

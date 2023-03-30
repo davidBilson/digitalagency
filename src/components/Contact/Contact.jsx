@@ -1,7 +1,7 @@
 import './Contact.css'
 import {MdOutlineRocketLaunch} from 'react-icons/md'
 import { useState } from 'react';
-import {AiFillInstagram, AiOutlineTwitter} from 'react-icons/ai';
+import {AiFillPhone} from 'react-icons/ai';
 import {IoLogoWhatsapp} from 'react-icons/io';
 import {CgMail} from 'react-icons/cg'
 
@@ -15,7 +15,7 @@ const Contact = () => {
             right:'auto',
             width:"90%",
             maxWidth: "370px",
-            height:"650px",
+            height:"600px",
             margin: "auto",
             borderRadius:"40px",
             border:"none",
@@ -51,18 +51,9 @@ const Contact = () => {
             <p>Build your vision with us! Our experts create websites, content, and graphics. Contact us via social links below.</p>
             </div>
             <div className="modal-socials">
-            <a href="">
-                Twitter <AiOutlineTwitter />
-                </a>
-                <a href="">
-                +1 (702) 561-9562 <IoLogoWhatsapp />
-                </a>
-                <a href="">
-                Instagram <AiFillInstagram />
-                </a>
-                <a href="">
-                cyberphonkstudios@gmail.com <CgMail />
-                </a>
+                <a href="tel:(702)984-3036">Call us <AiFillPhone /></a>
+                <a href="https://wa.me/+1(702)561-9562">Message us on WhatsApp <IoLogoWhatsapp /></a>
+                <a href="mailto:cyberphonkstudios@gmail.com?subject=Request%20for:">Send us an email <CgMail /></a>
             </div>
           </div>
         </Modal>
